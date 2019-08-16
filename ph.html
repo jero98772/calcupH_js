@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>programa para calcular en PH 25°C </title>
+	<title>programa para calcular PH a 25°C </title>
 	<script type="text/javascript" src="ph.js"></script>
 </head>
 <body>
@@ -12,6 +12,7 @@ moles<input type="text" id="moles">
 Ka<input type="text" id="Ka">
 Kb<input type="text" id="Kb">
 exponte<input type="text" id="exponent">
+
 <select id="Select1" name="Select2">
   <option id="PH" value="PH">Ka:PH</option>
   <option id="POH" value="POH">Kb:POH</option>
@@ -19,6 +20,8 @@ exponte<input type="text" id="exponent">
   <option id="OH" value="OH">Kb:OH-</option>
   <option id="henderson_hasselbalch" value="henderson_hasselbalch">Ka:henderson_hasselbalch</option>
 </select>
+</br>
+sal<input type="text" id="sal">
 <br><br>
 <input type="button" onclick ="calculateph()" value="sumit">
 </form>
@@ -34,7 +37,7 @@ exponte<input type="text" id="exponent">
 <p id="acid_or_base" ></p>
 <p id="paso_5" ></p>
 <p id="verificar" ></p>
-en el ensayo no puede ser tan largo el el numero solo el nesesario por que sino no procesara la informacion nesearia y sino se bloaquera  o trabajara mal el algoritmo
+en el programa  no puede ser tan largo el el numero ,  solo el aplicarle el número  necesario porque sino no procesa la información necesaria y se bloquea  o trabajara mal el algoritmo
 
  <table border="2">
  <tr>
@@ -55,12 +58,13 @@ en el ensayo no puede ser tan largo el el numero solo el nesesario por que sino 
   </tr>
 </table> 
 <p><h2>notas</h2></p>
-<p>no todas las kb y ka estan hay en esas tablas</p>
-<p>no es nesesario poner notacion cientifica2</p>
-<p><h3>notas para el progrmador :</h3></p>
-<p>*el codigo esta ecrito en ingles-español pero para de personas que hablen  esapañol</p>
-<p>*para obtimisar algoritmos y trabajar en  todos los casos -1 con todos los</p>
-<p>algorimos se usa uno general asi que si dentro del prosedimiento puede que se</p>
+<p>no todas las Kb y Ka estan hay en esas tablas</p>
+<p>no es necesario poner notación científicas</p>
+<p><h3>notas para el progrmador </h3></p>
+<p>*el código está escrito en inglés-español (pero el lenguaje de programación es  javascript) pero para se va terminar en ingles corrigiendo algunas palabras como pasos</p>
+<p>*para optimizar algoritmos y trabajar en  todos los casos menos un caso son generales  con la mayoría de los </p> 
+<p>algoritmos así que si dentro del procedimiento puede que se repite el valor de respuesta en el procedimiento y es por</p>
+<p>la programación y por el algoritmo general pero esto se va corregir</p>
 <p>repite el valor de respueta en el procedimiento y es por la progrmacion</p>
 <p>*las tablas con ka y kb  son una foto para hacer  mas rapido el prooceso programacion </p>
 </br>
