@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>programa para calcular en PH 25°C </title>
+	<script type="text/javascript" src="ph.js"></script>
+</head>
+<body>
+<form id="From1" name="From2" >
+
+
+moles<input type="text" id="moles">
+Ka<input type="text" id="Ka">
+Kb<input type="text" id="Kb">
+exponte<input type="text" id="exponent">
+<select id="Select1" name="Select2">
+  <option id="PH" value="PH">Ka:PH</option>
+  <option id="POH" value="POH">Kb:POH</option>
+  <option id="H" value="H">Ka:H+</option>
+  <option id="OH" value="OH">Kb:OH-</option>
+  <option id="henderson_hasselbalch" value="henderson_hasselbalch">Ka:henderson_hasselbalch</option>
+</select>
+<br><br>
+<input type="button" onclick ="calculateph()" value="sumit">
+</form>
+<p id="paso_0" ></p>
+<p id="multiple_0" ></p>
+<p id="paso_1" ></p>
+<p id="sqrt_1" ></p>
+<p id="paso_2" ></p>
+<p id="log_2" ></p>
+<p id="paso_3" ></p>
+<p id="pH_subtraction_3" ></p>
+<p id="paso_4" ></p>
+<p id="acid_or_base" ></p>
+<p id="paso_5" ></p>
+<p id="verificar" ></p>
+en el ensayo no puede ser tan largo el el numero solo el nesesario por que sino no procesara la informacion nesearia y sino se bloaquera  o trabajara mal el algoritmo
+
+ <table border="2">
+ <tr>
+    <th>donde no va el valor</th>
+    <td>limite del valor</td>
+  </tr>
+  <tr>
+    <th>exponte</th>
+    <td>-323 o 323</td>
+  </tr>
+  <tr>
+    <th>moles</th>
+    <td>1</td>
+  </tr>
+  <tr>
+  	<th>ka o kb</th>
+    <td>10</td>
+  </tr>
+</table> 
+<p><h2>notas</h2></p>
+<p>no todas las kb y ka estan hay en esas tablas</p>
+<p>no es nesesario poner notacion cientifica2</p>
+<p><h3>notas para el progrmador :</h3></p>
+<p>*el codigo esta ecrito en ingles-español pero para de personas que hablen  esapañol</p>
+<p>*para obtimisar algoritmos y trabajar en  todos los casos -1 con todos los</p>
+<p>algorimos se usa uno general asi que si dentro del prosedimiento puede que se</p>
+<p>repite el valor de respueta en el procedimiento y es por la progrmacion</p>
+<p>*las tablas con ka y kb  son una foto para hacer  mas rapido el prooceso programacion </p>
+</br>
+<p><h3>tablas de informacion con ka y Kb</h3> </p>
+<img src="img/acido_o_base_furte.jpg"></br>
+<img src="img/tabla13.jpg"></br>
+<img src="img/tabla14.jpg"></br>
+<img style="transform:rotate(90deg); width:700px; height:700px;" src="img/tabla15.jpg" ></br>
+<p><h3>usos</h3></p>
+<p>hacer tareas mediante ese algorimo</p>
+<p>y el uso que le encuetres</p>
+<p><h2>usar el progrma</h2></p>
+<p><h3>si es para hallar pH</h3></p>
+<p>intruduce la cantidad de moles nesesarias por (ahora va ser si el ejercio las da y no toca calcularlas) </p>
+<p>intruduce la cantidad de Ka si te piden de una sutancia especifica en las tablas puedes encontrar la Ka   </p>
+<p><h3>si es para hallar pOH</h3></p>
+<p>intruduce la cantidad de moles nesesarias por (ahora va ser si el ejercio las da y no toca calcularlas) </p>
+<p>intruduce la cantidad de Kb si te piden de una sutancia especifica en las tablas puedes encontrar la Kb </p>
+<p><h3>si es para hallar H</h3></p>
+<p>trbajando en eso</p>
+<p>trbajando en eso</p>
+<p><h3>si es para hallar OH</h3></p>
+<p>trbajando en eso</p>
+<p>trbajando en eso</p>
+</body>
+</html>
