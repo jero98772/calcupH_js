@@ -329,6 +329,6 @@ function  henderson_hasselbalch(sal,mol,ka){//sal,Moles,kb_o_ka
 	console.log(ka)
 	henderson_hasselbalch=Math.log10(sal)
 	console.log("divicion",divide)
-//	multiple_out="<h2>"+"multiplicacion para hallar X2 que es OH- o H+ :</br>"+String(Kb)+"*10**"+exponent+"  /  "+String(moles)+"  =  "+String(divide)+"</h2>"
-// 	multiple_0.innerHTML=multiple_out
+	henderson_hasselbalch_out="<h2>"+"</br>"+"</h2>"
+	multiple_0.innerHTML=henderson_hasselbalch_out
 }
