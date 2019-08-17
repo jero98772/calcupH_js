@@ -1,10 +1,11 @@
 escribir para hallar 
-1 con la ecuacion henderson_hasselbalch para ph
-2 h+
-3 oh-
+1 h+
+2 oh-
 corregir o agregar
 1 ortografia
 2 idioma (lo empese ingles y lo temirne español )
 3 hacer calculo de moles 
 4 añadir instrucciones como descargarlo
+5 kb o ka cual escojer 
+6 porque no quito verificado (una veces dava error el caclulo un numero que no era  y verificado no es un metodo confiable  pero si es magia desd me mi punto de vista) 
 y releerlo y redefinir lista

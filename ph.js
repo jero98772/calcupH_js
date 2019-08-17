@@ -8,6 +8,7 @@ acid_or_base=document.getElementById("acid_or_base");
 moles=document.getElementById("moles").value;
 Kb=document.getElementById("Kb").value;
 Ka=document.getElementById("Ka").value;
+sal=document.getElementById("sal").value;
 paso_0=document.getElementById("paso_0");
 paso_5=document.getElementById("paso_5");
 paso_4=document.getElementById("paso_4");
@@ -16,11 +17,13 @@ paso_2=document.getElementById("paso_2");
 paso_1=document.getElementById("paso_1");
 verificar=document.getElementById("verificar");
 exponent=document.getElementById("exponent").value;
+pH=document.getElementById("pH").value;
+pOH=document.getElementById("pOH").value;
 Select = document.From2.Select2;
 Select=document.getElementById('Select1');
 selected = Select.options[Select.selectedIndex].value;
 }
-function calculateph() {
+function calcuph() {
 cointain();
 if (selected=='POH') {
 	Kb.disabled = true;
@@ -37,7 +40,22 @@ if (selected=='PH') {
 if (selected=='henderson_hasselbalch') {
 	Ka.disabled = true;
 	Kb.disabled=false;
-	henderson_hasselbalch(sal,moles,ka)
+	henderson_hasselbalch_ph(sal,moles,Ka)
+}
+if (selected=='OH_pH') {
+	Ka.disabled = false;
+	Kb.disabled=false;
+OH_when_have_pH()
+}
+if (selected=='H_pH') {
+	Ka.disabled = false;
+	Kb.disabled=false;
+	H_when_have_pH()
+}
+if (selected=='OH_pOH') {
+	Ka.disabled = false;
+	Kb.disabled=false;
+	OH_when_have_pOH()
 }
 }
 
@@ -174,8 +192,9 @@ cointain()
 
 	}
 }
-function ho(){
+function oh(){
 cointain()
+
 }
 function poh(){
 cointain()
@@ -255,6 +274,7 @@ cointain()
 			pH_subtraction_3.innerHTML=pH_subtraction_out
 			console.log(pH_subtraction2)
 			verificar.innerHTML="verificado = )";
+					
 		}
 	}
 	else{
@@ -304,20 +324,38 @@ cointain()
 
  }
 }
-function h(){
-cointain()
+function H_when_have_pH(){
+	cointain()
+	pH=parseFloat(pH);
+	console.log(pH)
+	H=10**-pH
+	H_when_have_pH="<h2></br>"+"10^-"+pH+"=<center>"+H+"</center></h2>"
+	multiple_0.innerHTML=H_when_have_pH
+}	
+function OH_when_have_pH(){
+	cointain()
+	pH=parseFloat(pH);
+	pOH=parseFloat(pOH);
+	console.log(pH)
+	pOH=14-pH
+	OH=10**-pOH
+	OH_when_have_pH="<h2>"+pOH+"14-"+pH+" </br>"+"10^-"+pH+"=<center>"+henderson_hasselbalch+"</center></h2>"
+	multiple_0.innerHTML=OH_when_have_pH
 }
-function  henderson_hasselbalch(sal,mol,ka){//sal,Moles,kb_o_ka
+	function OH_when_have_pOH(){
+	cointain()
+	pOH=parseFloat(pOH);
+	console.log(pOH);
+	OH=10**-pOH
+	OH_when_have_pOH="<h2></br>"+"10^-"+pOH+"=<center>"+OH+"</center></h2>"
+	multiple_0.innerHTML=OH_when_have_pOH
+}
+function  henderson_hasselbalch_ph(sal,mol,ka){//sal,Moles,ka
 	cointain();
 
 	acido="<h1> y es un acido</h1>"
 	acid_or_base.innerHTML=acido;
-	step_0.innerHTML="paso 0 multiplicacion";
-	step_1.innerHTML="paso 1 raiz cuadrada";
-	step_2.innerHTML="paso 2 logaritmo";
-	step_3.innerHTML="paso 3 subtraccion a PH";
-	step_4.innerHTML="paso 4 acido o base";
-	step_5.innerHTML="paso 5 verificar";
+	paso_0.innerHTML="sacar logaritmo por metodo se henderson hasselbalch ";
 
 	exponent=parseInt(exponent);
 	console.log(exponent)
@@ -325,10 +363,50 @@ function  henderson_hasselbalch(sal,mol,ka){//sal,Moles,kb_o_ka
 	console.log(Ka)
 	moles=parseFloat(moles);
 	console.log(moles)
+	parseFloat(sal);
+	console.log(sal)
 	Ka=Ka*10**(exponent)
 	console.log(ka)
-	henderson_hasselbalch=Math.log10(sal)
-	console.log("divicion",divide)
-	henderson_hasselbalch_out="<h2>"+"</br>"+"</h2>"
+	henderson_hasselbalch=ka+Math.log10(sal/mol)
+	console.log("henderson_hasselbalch1",henderson_hasselbalch)
+	console.log("henderson_hasselbalch",henderson_hasselbalch)
+	henderson_hasselbalch_out="<h2></br>"+"log10("+ka+")"+"log10("+sal+"/"+mol+")"+"=<center>"+henderson_hasselbalch+"</center></h2>"
 	multiple_0.innerHTML=henderson_hasselbalch_out
+	
+
+}
+function  henderson_hasselbalch_poh(sal,mol,ka){//sal,Moles,ka
+	cointain();
+
+	acido="<h1> y es una base</h1>"
+	acid_or_base.innerHTML=acido;
+	paso_0.innerHTML="sacar logaritmo por metodo se henderson hasselbalch ";
+
+	exponent=parseInt(exponent);
+	console.log(exponent)
+	kb=parseFloat(kb);
+	console.log(kb)
+	moles=parseFloat(moles);
+	console.log(moles)
+	parseFloat(sal);
+	console.log(sal)
+	kb=kb*10**(exponent)
+	console.log(kb)
+	henderson_hasselbalch=kb+Math.log10(sal/mol)
+	console.log("henderson_hasselbalch1",henderson_hasselbalch)
+	if (henderson_hasselbalch>7) {
+	console.log("henderson_hasselbalch",henderson_hasselbalch)
+	henderson_hasselbalch+=
+	henderson_hasselbalch_out="<h2></br>"+"log10("+ka+")"+"log10("+sal+"/"+mol+")"+"=<center>"+henderson_hasselbalch+"</center></h2>"
+	multiple_0.innerHTML=henderson_hasselbalch_out
+	}
+	if (henderson_hasselbalch<14) {
+	console.log("henderson_hasselbalch",henderson_hasselbalch)
+	henderson_hasselbalch_out="<h2></br>"+"log10("+ka+")"+"log10("+sal+"/"+mol+")"+"=<center>"+henderson_hasselbalch+"</center></h2>"
+	multiple_0.innerHTML=henderson_hasselbalch_out
+	}
+	else{
+	henderson_hasselbalch_out="intenta con otro numero  o con Ka por que debe ser con Kb ;)"
+	multiple_0.innerHTML=henderson_hasselbalch_out
+	}
 }
