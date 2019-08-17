@@ -22,3 +22,38 @@ notas  para el programador
 de donde salió la idea 
 
 ganar en la escuela química de una forma divertida y enfrentando los problemas como cada uno quiere   y funciono yo siempre lo sacaba bajo y lo gane alto lo hice para mi en python decidí transcribir a javascript para que más personas pudieran tener acceso a esa herramienta y como en python lo hice para mi que “solo yo lo entendiera “ entonces para que más personas puedan disfrutar de esta herramienta
+
+# usos y usar el programa
+
+hacer tareas mediante este algoritmo y el uso que le encuentres
+
+*si es para hallar pH*
+
+introduce la cantidad de moles necesarias por (ahora va ser si el ejercicio las da y no toca calcularlas) 
+introduce la cantidad de Ka si te piden de una sustancia específica en las tablas puedes encontrar la Ka  
+
+*si es para hallar pOH*
+
+introduce la cantidad de moles necesarias por (ahora va ser si el ejercicio las da y no toca introduce la cantidad de Kb si te piden de una sustancia específica en las tablas puedes encontrar la Kb
+
+*si es para hallar H*
+
+para hallar H hay varios casos 1 H+ con moles , 2H+ con ph 3 
+para hallar H+ siempre se tiene ph en mi programa  con moles se halla el ph  y también hay que introducir la Ka y H+ con ph solo 
+se introduce el ph 
+
+*si es para hallar OH*
+
+para hallar OH hay varios casos 1 OH- con moles , 2 OH- con ph y 3 con poh
+para hallar OH- siempre se tiene ph en mi programa  con moles se halla el ph  y también hay que introducir la Ka y OH- con ph solo se introduce el ph y con el poh se resta a 14 para obtener ph y se exponencia 10 elevado ph y se obtiene OH-
+
+# como descarcagrlo
+1 clona o descarga el repositorio 
+
+descargar en la parte superior derecha de la pantalla va aparecer un boton que dice descargar zip  y lo descargas y lo descomprimes abres la carpeta calcupH_js ejecutas el archivo ph.html y te debería abrir una página web y ya lo tienes listo para usar solo es ingresar los datos que te pidan
+
+2 clonar si ya tienes instalado git podrás ejecutar en la terminal 
+
+$ git clone https://github.com/jero98772/calcupH_js.git
+
+abres la carpeta calcupH_js ejecutas el archivo ph.html y te debería abrir una página web y ya lo tienes listo para usar solo es ingresar los datos que te pidan
