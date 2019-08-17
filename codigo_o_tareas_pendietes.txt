@@ -6,7 +6,20 @@ corregir o agregar
 1 ortografia (ñ)
 2 idioma (lo empese ingles y lo temirne español )
 3 hacer calculo de moles 
-4 añadir instrucciones como descargarlo
+4 añadir instrucciones como descargarlo  al readme
 5 kb o ka cual escojer 
 6 porque no quito verificado (una veces dava error el caclulo un numero que no era  y verificado no es un metodo confiable  pero si es magia desd me mi punto de vista) 
+7 agregar cosas al readme 
+8 ordenar o priorisar tareras (ok)
+9 subirlo a wiki un/loquer
 y releerlo y redefinir lista
+orden
+1:8 ordenar o priorisar tareras (ok)
+2:4 añadir instrucciones como descargarlo al readme
+3:5 kb o ka cual escojer 
+4:2 idioma (lo empese ingles y lo temirne español )
+5:6 porque no quito verificado (una veces dava error el caclulo un numero que no era  y verificado no es un metodo confiable  pero si es magia desd me mi punto de vista) 
+6:7 agregar cosas al readme 
+7:1 ortografia (ñ)
+8:3 hacer calculo de moles
+9:9 subirlo a wiki un/loquer

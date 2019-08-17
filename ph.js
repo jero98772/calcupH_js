@@ -47,7 +47,7 @@ if (selected=='henderson_hasselbalch') {
 if (selected=='OH_pH') {
 	Ka.disabled = false;
 	Kb.disabled=false;
-OH_when_have_pH()
+	OH_when_have_pH()
 }
 if (selected=='H_pH') {
 	Ka.disabled = false;
@@ -361,28 +361,39 @@ return pH_subtraction2;
 function H_when_have_pH(){
 	cointain()
 	pH=parseFloat(pH);
+	condition=Boolean(pH<7 && pH>0)
+	if (condition) {
 	console.log(pH)
 	H=10**-pH
 	H_when_have_pH="<h2></br>"+"10^-"+pH+"=<center>"+H+"</center></h2>"
 	multiple_0.innerHTML=H_when_have_pH
+	}
 }	
 function OH_when_have_pH(){
 	cointain()
 	pH=parseFloat(pH);
 	pOH=parseFloat(pOH);
+	//condition=Boolean(pOH<14 && pOH>7 && pH<7 && pH>0)
+	condition=Boolean( pH<7 && pH>0)
 	console.log(pH)
+	console.log(pOH)
+	if (condition) {
 	pOH=14-pH
 	OH=10**-pOH
-	OH_when_have_pH="<h2>"+pOH+"14-"+pH+" </br>"+"10^-"+pH+"=<center>"+henderson_hasselbalch+"</center></h2>"
+	OH_when_have_pH="<h2>"+pOH+"14-"+pH+" </br>"+"10^-"+pH+"=<center>"+OH+"</center></h2>"
 	multiple_0.innerHTML=OH_when_have_pH
+	}
 }
 	function OH_when_have_pOH(){
 	cointain()
 	pOH=parseFloat(pOH);
 	console.log(pOH);
+	condition=Boolean(pOH<14 && pOH>7)
+	if (condition) {
 	OH=10**-pOH
 	OH_when_have_pOH="<h2></br>"+"10^-"+pOH+"=<center>"+OH+"</center></h2>"
 	multiple_0.innerHTML=OH_when_have_pOH
+}
 }
 function  henderson_hasselbalch_ph(sal,mol,ka){//sal,Moles,ka
 	cointain();
