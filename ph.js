@@ -4,6 +4,7 @@ multiple_0=document.getElementById("multiple_0");
 sqrt_1=document.getElementById("sqrt_1");
 log_2=document.getElementById("log_2");
 pH_subtraction_3=document.getElementById("pH_subtraction_3");
+H_o_OH=document.getElementById("h_o_oh_3.5");
 acid_or_base=document.getElementById("acid_or_base");
 moles=document.getElementById("moles").value;
 Kb=document.getElementById("Kb").value;
@@ -12,6 +13,7 @@ sal=document.getElementById("sal").value;
 paso_0=document.getElementById("paso_0");
 paso_5=document.getElementById("paso_5");
 paso_4=document.getElementById("paso_4");
+paso_35=document.getElementById("paso_3.5");
 paso_3=document.getElementById("paso_3");
 paso_2=document.getElementById("paso_2");
 paso_1=document.getElementById("paso_1");
@@ -57,8 +59,17 @@ if (selected=='OH_pOH') {
 	Kb.disabled=false;
 	OH_when_have_pOH()
 }
+if (selected=='OH_mol') {
+	Ka.disabled = false;
+	Kb.disabled=false;
+	OH_when_have_mol()
 }
-
+if (selected=='H_mol') {
+	Ka.disabled = false;
+	Kb.disabled=false;
+	OH_when_have_mol()
+}
+}
 function ph(){
 cointain()
 	base="<h1> y es una acido</h1>"
@@ -111,7 +122,6 @@ cointain()
 		console.log(sqrt)
 		log=-Math.log10(parseFloat(sqrt));
 		console.log(log)
-		
 		//pH_subtraction2 =14-log
 		//console.log("pH_subtraction2",pH_subtraction2)
 		bool=Boolean(log<7  && log>0 );
@@ -140,7 +150,10 @@ cointain()
 			//pH_subtraction_3.innerHTML=pH_subtraction_out
 			//console.log(pH_subtraction2)
 			verificar.innerHTML="verificado = )";
+			return log;
 		}
+		return log;
+
 	}
 	else{
 		log_out="<h2>"+" log es formuala de  OH-:</br>"+"log(  "+String(sqrt)+"  )=  "+String(log)+"</h2>"+"<br/>"
@@ -188,13 +201,29 @@ cointain()
 			//pH_subtraction_3.innerHTML=pH_subtraction_out
 			//console.log(pH_subtraction2)
 			verificar.innerHTML="verificado = )";
+		return log;
+
 		}
-
+	return log;
 	}
-}
-function oh(){
-cointain()
+return log;
 
+}
+function OH_when_have_mol(){
+cointain()
+	pOH=poh()
+	OH=10**-pOH
+	OH_when_have_mol="<h2></br>"+"10^-"+pOH+"=<center>"+OH+"</center></h2>"
+	H_o_OH.innerHTML=OH_when_have_mol
+	paso_35.innerHTML="paso 3.5 halar OH- depende del caso ";
+}
+function H_when_have_mol(){
+cointain()
+	pH=ph()
+	H=10**-pH
+	H_when_have_mol="<h2></br>"+"10^-"+pH+"=<center>"+H+"</center></h2>"
+	H_o_OH.innerHTML=H_when_have_mol
+	paso_35.innerHTML="paso 3.5 halar H+ depende del caso ";
 }
 function poh(){
 cointain()
@@ -274,9 +303,11 @@ cointain()
 			pH_subtraction_3.innerHTML=pH_subtraction_out
 			console.log(pH_subtraction2)
 			verificar.innerHTML="verificado = )";
-					
+			return pH_subtraction2;		
 		}
+	return pH_subtraction2;
 	}
+
 	else{
 		log_out="<h2>"+" log es formuala de  OH-:</br>"+"log(  "+String(sqrt)+"  )=  "+String(log)+"</h2>"
 		log_2.innerHTML=log_out
@@ -320,9 +351,12 @@ cointain()
 			pH_subtraction_3.innerHTML=pH_subtraction_out
 			console.log(pH_subtraction2)
 			verificar.innerHTML="verificado = )";
-	}
+	return pH_subtraction2;
 
+	}
+	return pH_subtraction2;
  }
+return pH_subtraction2;
 }
 function H_when_have_pH(){
 	cointain()

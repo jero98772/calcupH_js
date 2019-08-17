@@ -1,8 +1,9 @@
 escribir para hallar 
-1 h+
-2 oh-
+1 h+ (ok)
+2 oh- (ok)
+3 henderson_hasselbalch (ok)
 corregir o agregar
-1 ortografia
+1 ortografia (ñ)
 2 idioma (lo empese ingles y lo temirne español )
 3 hacer calculo de moles 
 4 añadir instrucciones como descargarlo
