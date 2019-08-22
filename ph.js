@@ -412,10 +412,10 @@ function  henderson_hasselbalch_ph(sal,mol,ka){//sal,Moles,ka
 	console.log(sal)
 	Ka=Ka*10**(exponent)
 	console.log(ka)
-	henderson_hasselbalch=ka+Math.log10(sal/mol)
+	henderson_hasselbalch=Ka+Math.log10(sal/mol)
 	console.log("henderson_hasselbalch1",henderson_hasselbalch)
 	console.log("henderson_hasselbalch",henderson_hasselbalch)
-	henderson_hasselbalch_out="<h2></br>"+"log10("+ka+")"+"log10("+sal+"/"+mol+")"+"=<center>"+henderson_hasselbalch+"</center></h2>"
+	henderson_hasselbalch_out="<h2></br>"+ka+"+log10("+sal+"/"+mol+")"+"=<center>"+henderson_hasselbalch+"</center></h2>"
 	multiple_0.innerHTML=henderson_hasselbalch_out
 	
 
@@ -442,12 +442,12 @@ function  henderson_hasselbalch_poh(sal,mol,ka){//sal,Moles,ka
 	if (henderson_hasselbalch>7) {
 	console.log("henderson_hasselbalch",henderson_hasselbalch)
 	henderson_hasselbalch+=
-	henderson_hasselbalch_out="<h2></br>"+"log10("+ka+")"+"log10("+sal+"/"+mol+")"+"=<center>"+henderson_hasselbalch+"</center></h2>"
+	henderson_hasselbalch_out="<h2></br>"+ka+"+log10("+sal+"/"+mol+")"+"=<center>"+henderson_hasselbalch+"</center></h2>"
 	multiple_0.innerHTML=henderson_hasselbalch_out
 	}
 	if (henderson_hasselbalch<14) {
 	console.log("henderson_hasselbalch",henderson_hasselbalch)
-	henderson_hasselbalch_out="<h2></br>"+"log10("+ka+")"+"log10("+sal+"/"+mol+")"+"=<center>"+henderson_hasselbalch+"</center></h2>"
+	henderson_hasselbalch_out="<h2></br>"+ka+"+log10("+sal+"/"+mol+")"+"=<center>"+henderson_hasselbalch+"</center></h2>"
 	multiple_0.innerHTML=henderson_hasselbalch_out
 	}
 	else{
