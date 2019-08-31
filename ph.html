@@ -6,29 +6,53 @@
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 </head>
 <body>
+<h3>
+<p>en el menu desplegable puede verse *si es Ka o Kb :que se halla :con que se halla * y esos son los datos a ingresar</p>
+<p>Ka pertenece a acido</p>
+<p>Kb pertenece a bases</p>
+</h3>
+<table border="2">
+	<tr>
+		<td>H+	</td>		
+		<th>un ion de Hidrogeno que genera acides en el agua </th>
+	</tr>
+	<tr>
+		<td>OH-	</td>
+		<th>un ion de oxigeno y hidrogeno que genera alcalinidad en el agua </th>
+	</tr>
+	<tr>
+		<td>pOH	</td>
+		<th>una medida de OH- </th>
+	</tr>
+	<tr>
+		<td>pH	</td>
+		<th>una medida de acides </th>
+	</tr>
+	<tr>
+		<td>henderson_hasselbalch</td>
+		<th>una genera solucion buffer que cambia el ph para mantenerlo estable </th>
+	</tr>
+</table>  
 <form id="From1" name="From2" >
-
-
-moles<input type="text" id="moles">
 Ka<input type="text" id="Ka">
 Kb<input type="text" id="Kb">
-exponte<input type="text" id="exponent">
-
-<select id="Select1" name="Select2">
-  <option id="PH" value="PH">Ka:PH</option>
-  <option id="POH" value="POH">Kb:POH</option>
-  <option id="H_mol" value="H_mol">Ka:H+ con moles </option>
-  <option id="OH_mol" value="OH_mol">Kb:OH- con moles</option>
-  <option id="H_pH" value="H_pH">Ka:H+ con ph</option>
-  <option id="OH_pH" value="OH_pH">Kb:HO- con ph</option>
-  <option id="OH_pOH" value="OH_pOH">Kb:OH- con pOH</option>
-  <option id="henderson_hasselbalch" value="henderson_hasselbalch">Ka:henderson_hasselbalch</option>
-</select>
-</br>
+moles<input type="text" id="moles">
 sal<input type="text" id="sal">
+<br>
 pOH<input type="text" id="pOH">
 pH<input type="text" id="pH">
-<br><br>
+exponte<input type="text" id="exponent">
+menu desplegable<select id="Select1" name="Select2">
+  <option type="text" id="PH" value="PH">Ka:PH :con Ka y moles</option>
+  <option type="text" id="POH" value="POH">Kb:POH :con Kb y moles</option>
+  <option type="text" id="H_mol" value="H_mol">Ka:H+ :con moles  y Ka </option>
+  <option type="text" id="OH_mol" value="OH_mol">Kb:OH- :con moles  y Ka</option>
+  <option type="text" id="H_pH" value="H_pH">Ka:H+ :con ph </option>
+  <option type="text" id="OH_pH" value="OH_pH">Kb:HO- :con ph</option>
+  <option type="text" id="OH_pOH" value="OH_pOH">Kb:OH-: con pOH</option>
+  <option type="text" id="henderson_hasselbalch" value="henderson_hasselbalch">Ka:henderson_hasselbalch</option>
+</select> 
+</br>
 <input type="button" onclick ="calcuph()" value="calcular">
 </form>
 <p id="paso_0" ></p>

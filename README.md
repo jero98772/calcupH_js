@@ -27,6 +27,8 @@ ganar en la escuela química de una forma divertida y enfrentando los problemas 
 
 hacer tareas mediante este algoritmo y el uso que le encuentres
 
+en el menu desplegable puede verse *si es Ka o Kb :que se halla :con que se halla * y esos son los datos a ingresar
+
 *si es para hallar pH*
 
 introduce la cantidad de moles necesarias por (ahora va ser si el ejercicio las da y no toca calcularlas) 
