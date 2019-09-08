@@ -15,8 +15,8 @@ corregir o agregar
 y releerlo y redefinir lista
 orden
 1:8 ordenar o priorisar tareras (ok)
-2:4 añadir instrucciones como descargarlo al readme y como usar
-3:5 kb o ka cual escojer 
+2:4 añadir instrucciones como descargarlo al readme y como usar(mas o menos)
+3:5 kb o ka cual escojer y que son los moles
 4:2 idioma (lo empese ingles y lo temirne español )
 5:6 porque no quito verificado (una veces dava error el caclulo un numero que no era  y verificado no es un metodo confiable  pero si es magia desd me mi punto de vista) 
 6:7 agregar cosas al readme 
