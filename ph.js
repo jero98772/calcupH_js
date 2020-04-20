@@ -24,6 +24,7 @@ pOH=document.getElementById("pOH").value;
 Select = document.From2.Select2;
 Select=document.getElementById('Select1');
 selected = Select.options[Select.selectedIndex].value;
+cuadratic = (a, b, c) => {return (-b-((b**(1/2)) - (4*a*c)))/(2*a), (-b+((b**(1/2)) - (4*a*c)))/(2*a);}
 }
 function calcuph() {
 cointain();
@@ -92,7 +93,8 @@ cointain()
 	divide=Ka*10**(exponent)
 	//divide= Ka*moles
 	console.log(divide)
-	divide/=moles
+	//divide/=moles
+	divide = cuadratic(moles,divide,0) ;
 	console.log("divicion",divide)
 	multiple_out="<h2>"+"multiplicacion para hallar X2 que es OH- o H+ :</br>"+String(Ka)+"*10**"+exponent+"  /  "+String(moles)+"  =  "+String(divide)+"</h2>"
 	divide.innerHTML=multiple_out
@@ -247,7 +249,8 @@ cointain()
 	divide=Kb*10**(exponent)
 	//divide= Ka*moles
 	console.log(divide)
-	divide/=moles
+	//divide/=moles
+	divide = cuadratic(moles,divide,0) ;
 	console.log(divide)
 	multiple_out="<h2>"+"multiplicacion para hallar X2 que es OH- o H+ :</br>"+String(Kb)+"*10**"+exponent+"  /  "+String(moles)+"  =  "+String(divide)+"</h2>"
 	divide.innerHTML=multiple_out
