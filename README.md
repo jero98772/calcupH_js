@@ -56,6 +56,16 @@ descargar en la parte superior derecha de la pantalla va aparecer un boton que d
 
 2 clonar si ya tienes instalado git podrás ejecutar en la terminal 
 
-$ git clone https://github.com/jero98772/calcupH_js.git
+      git clone https://github.com/jero98772/calcupH_js.git
 
 abres la carpeta calcupH_js ejecutas el archivo ph.html y te debería abrir una página web y ya lo tienes listo para usar solo es ingresar los datos que te pidan
+# notas
+este proyecto hace parte de wwwof una serie de proyectos de peces [github de wwwof](https://github.com/jero98772/wwwofish)
+
+es una version web de [PHpythoncalcultator](https://github.com/jero98772/PHpythoncalcultator) 
+
+aqui esta funcionando temporalmente http://jero98772.pythonanywhere.com/calcupH.html
+## contibuye con donaciones 
+	
+	- Bitcoin: tb1qgt4trnnsxdmfcpnydkmk8ht0y4esg4cdvzmhaz
+ o haciendo algo de codigo_o_tareas_pendietes.txt
