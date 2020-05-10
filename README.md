@@ -11,7 +11,7 @@ notas
 
 ### 2no es necesario poner notación científicas
 
-###notas  para el programador
+### notas  para el programador
 
 1el código está escrito en inglés-español (pero el lenguaje de programación es  javascript) pero para se va terminar en ingles (el codigo) corrigiendo algunas palabras como pasos
 
