@@ -7,17 +7,17 @@ en el programa  no puede ser tan largo el el numero ,  solo el aplicarle el núm
 
 notas
 
-#1no todas las Kb y Ka estan hay en esas tablas
+### 1no todas las Kb y Ka estan hay en esas tablas
 
-#2no es necesario poner notación científicas
+### 2no es necesario poner notación científicas
 
 notas  para el programador
 
-#1el código está escrito en inglés-español (pero el lenguaje de programación es  javascript) pero para se va terminar en ingles (el codigo) corrigiendo algunas palabras como pasos
+### 1el código está escrito en inglés-español (pero el lenguaje de programación es  javascript) pero para se va terminar en ingles (el codigo) corrigiendo algunas palabras como pasos
 
-#2para optimizar algoritmos y trabajar en  todos los casos menos un caso ( henderson hasselbalch) son generales  con la mayoría de los algoritmos así que si dentro del procedimiento puede que se repite el valor de respuesta en el procedimiento y es por la programación y por el algoritmo general pero esto se va corregir
+### #2para optimizar algoritmos y trabajar en  todos los casos menos un caso ( henderson hasselbalch) son generales  con la mayoría de los algoritmos así que si dentro del procedimiento puede que se repite el valor de respuesta en el procedimiento y es por la programación y por el algoritmo general pero esto se va corregir
 
-#3las tablas con Ka y Kb  son una foto para hacer  mas rapido, mas el proceso programacion y menos duro el trabajo y menos el proceso de transcribir
+### 3las tablas con Ka y Kb  son una foto para hacer  mas rapido, mas el proceso programacion y menos duro el trabajo y menos el proceso de transcribir
 
 de donde salió la idea 
 
