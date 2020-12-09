@@ -67,5 +67,5 @@ es una version web de [PHpythoncalcultator](https://github.com/jero98772/PHpytho
 aqui esta funcionando temporalmente http://jero98772.pythonanywhere.com/calcupH.html
 ## contibuye con donaciones 
 	
-	- Bitcoin: tb1qgt4trnnsxdmfcpnydkmk8ht0y4esg4cdvzmhaz
+	- Bitcoin: bc1qf3eh6ssgzw2t3qyjk2gzwuskq4ctfk8375fg3r
  o haciendo algo de codigo_o_tareas_pendietes.txt
