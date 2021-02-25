@@ -1,11 +1,24 @@
 # calcupH_js
+
+<img src="http://wiki.unloquer.org/_media/personas/jero98772/calcuph.png" alt="calcuph" width="200" height="200"/>
+
+automatisacion de tareas escolares y calculadora proceosos quimicos en un acuario 
+
 calcupH_js es una calculadora de pH , pOH H+ y OH- ,puede usar el método henderson hasselbalch para hallar ph con una sal o simplemente con moles y Ka o Kb es orientado para las personas que saben en español por que esta echo en español está diseñado en javascript para poder manejar una interfaz agradable
 
 es un programa para calcular  PH a 25°C
 
 en el programa  no puede ser tan largo el el numero ,  solo el aplicarle el número  necesario porque sino no procesa la información necesaria y se bloquea  o trabajara mal el algoritmo
 
-notas
+# uso rapido
+
+[en wwwof](http://jero98772.pythonanywhere.com/calcupH.html)
+
+# notas
+
+## origen PHpythoncalcultator
+
+version web y interfas web de [codigo PHpythoncalcultator](https://github.com/jero98772/PHpythoncalcultator)
 
 ### 1no todas las Kb y Ka estan hay en esas tablas
 
