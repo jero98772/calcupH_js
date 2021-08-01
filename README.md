@@ -78,7 +78,6 @@ este proyecto hace parte de wwwof una serie de proyectos de peces [github de www
 es una version web de [PHpythoncalcultator](https://github.com/jero98772/PHpythoncalcultator) 
 
 aqui esta funcionando temporalmente http://jero98772.pythonanywhere.com/calcupH.html
-## contibuye con donaciones 
-	
-	- Bitcoin: bc1qf3eh6ssgzw2t3qyjk2gzwuskq4ctfk8375fg3r
- o haciendo algo de codigo_o_tareas_pendietes.txt
+## contibuye 
+
+haciendo algo de codigo_o_tareas_pendietes.txt
